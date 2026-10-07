@@ -30,6 +30,7 @@
         {
             this.DisplayListBox = new System.Windows.Forms.ListBox();
             this.ArrayButton = new System.Windows.Forms.Button();
+            this.StringSpanButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DisplayListBox
@@ -50,11 +51,22 @@
             this.ArrayButton.UseVisualStyleBackColor = true;
             this.ArrayButton.Click += new System.EventHandler(this.ArrayButton_Click);
             // 
+            // StringSpanButton
+            // 
+            this.StringSpanButton.Location = new System.Drawing.Point(251, 58);
+            this.StringSpanButton.Name = "StringSpanButton";
+            this.StringSpanButton.Size = new System.Drawing.Size(75, 23);
+            this.StringSpanButton.TabIndex = 2;
+            this.StringSpanButton.Text = "String Span";
+            this.StringSpanButton.UseVisualStyleBackColor = true;
+            this.StringSpanButton.Click += new System.EventHandler(this.StringSpanButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.StringSpanButton);
             this.Controls.Add(this.ArrayButton);
             this.Controls.Add(this.DisplayListBox);
             this.Name = "Form1";
@@ -67,6 +79,7 @@
 
         private System.Windows.Forms.ListBox DisplayListBox;
         private System.Windows.Forms.Button ArrayButton;
+        private System.Windows.Forms.Button StringSpanButton;
     }
 }
 

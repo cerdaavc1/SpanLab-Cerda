@@ -45,5 +45,23 @@ namespace SpanLab
 
 
         }
+
+        private void StringSpanButton_Click(object sender, EventArgs e)
+        {
+            DisplayListBox.Items.Clear();
+            string[] animals = { "cat", "bird","dog", "fish", "cow" };
+            Span<string> span = animals;
+
+            foreach (string value in span)
+            {
+                DisplayListBox.Items.Add($"RESULT: {value}");
+            }
+
+            DisplayListBox.Items.Add($"Length:{ span.Length}");
+
+
+
+
+        }
     }
 }
