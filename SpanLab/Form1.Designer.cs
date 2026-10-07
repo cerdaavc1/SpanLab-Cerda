@@ -31,6 +31,7 @@
             this.DisplayListBox = new System.Windows.Forms.ListBox();
             this.ArrayButton = new System.Windows.Forms.Button();
             this.StringSpanButton = new System.Windows.Forms.Button();
+            this.SliceButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DisplayListBox
@@ -61,11 +62,22 @@
             this.StringSpanButton.UseVisualStyleBackColor = true;
             this.StringSpanButton.Click += new System.EventHandler(this.StringSpanButton_Click);
             // 
+            // SliceButton
+            // 
+            this.SliceButton.Location = new System.Drawing.Point(251, 107);
+            this.SliceButton.Name = "SliceButton";
+            this.SliceButton.Size = new System.Drawing.Size(75, 23);
+            this.SliceButton.TabIndex = 3;
+            this.SliceButton.Text = "Slice";
+            this.SliceButton.UseVisualStyleBackColor = true;
+            this.SliceButton.Click += new System.EventHandler(this.SliceButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.SliceButton);
             this.Controls.Add(this.StringSpanButton);
             this.Controls.Add(this.ArrayButton);
             this.Controls.Add(this.DisplayListBox);
@@ -80,6 +92,7 @@
         private System.Windows.Forms.ListBox DisplayListBox;
         private System.Windows.Forms.Button ArrayButton;
         private System.Windows.Forms.Button StringSpanButton;
+        private System.Windows.Forms.Button SliceButton;
     }
 }
 

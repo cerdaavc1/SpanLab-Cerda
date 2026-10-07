@@ -63,5 +63,37 @@ namespace SpanLab
 
 
         }
+
+        private void SliceButton_Click(object sender, EventArgs e)
+        {
+            DisplayListBox.Items.Clear();
+            int[] numbers = { 10, 20, 30, 40 };
+            Span<int> span = numbers;
+
+            Span<int> slice1 = span.Slice(1);
+
+            DisplayListBox.Items.Add("Slice starting at index 1:");
+            foreach (int value in slice1)
+            {
+                DisplayListBox.Items.Add(value);
+            }
+
+            Span<int> slice2 = span.Slice(1, 2);
+
+            DisplayListBox.Items.Add("Slice starting at index 1 with length 2:");
+            foreach (int value in slice2)
+            {
+                DisplayListBox.Items.Add(value);
+            }
+
+            slice2[0] = 99;
+
+            DisplayListBox.Items.Add("Original array after changing slice2:");
+            foreach (int value in numbers)
+            {
+                DisplayListBox.Items.Add(value);
+            }
+
+        }
     }
 }
