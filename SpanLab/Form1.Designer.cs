@@ -32,6 +32,7 @@
             this.ArrayButton = new System.Windows.Forms.Button();
             this.StringSpanButton = new System.Windows.Forms.Button();
             this.SliceButton = new System.Windows.Forms.Button();
+            this.StackButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // DisplayListBox
@@ -54,7 +55,7 @@
             // 
             // StringSpanButton
             // 
-            this.StringSpanButton.Location = new System.Drawing.Point(251, 58);
+            this.StringSpanButton.Location = new System.Drawing.Point(251, 61);
             this.StringSpanButton.Name = "StringSpanButton";
             this.StringSpanButton.Size = new System.Drawing.Size(75, 23);
             this.StringSpanButton.TabIndex = 2;
@@ -64,7 +65,7 @@
             // 
             // SliceButton
             // 
-            this.SliceButton.Location = new System.Drawing.Point(251, 107);
+            this.SliceButton.Location = new System.Drawing.Point(251, 109);
             this.SliceButton.Name = "SliceButton";
             this.SliceButton.Size = new System.Drawing.Size(75, 23);
             this.SliceButton.TabIndex = 3;
@@ -72,11 +73,22 @@
             this.SliceButton.UseVisualStyleBackColor = true;
             this.SliceButton.Click += new System.EventHandler(this.SliceButton_Click);
             // 
+            // StackButton
+            // 
+            this.StackButton.Location = new System.Drawing.Point(251, 157);
+            this.StackButton.Name = "StackButton";
+            this.StackButton.Size = new System.Drawing.Size(75, 23);
+            this.StackButton.TabIndex = 4;
+            this.StackButton.Text = "Stack";
+            this.StackButton.UseVisualStyleBackColor = true;
+            this.StackButton.Click += new System.EventHandler(this.StackButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.StackButton);
             this.Controls.Add(this.SliceButton);
             this.Controls.Add(this.StringSpanButton);
             this.Controls.Add(this.ArrayButton);
@@ -93,6 +105,7 @@
         private System.Windows.Forms.Button ArrayButton;
         private System.Windows.Forms.Button StringSpanButton;
         private System.Windows.Forms.Button SliceButton;
+        private System.Windows.Forms.Button StackButton;
     }
 }
 
